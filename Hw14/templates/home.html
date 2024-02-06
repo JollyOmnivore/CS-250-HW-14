@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if loggedin %}
+<div class="nav">
+    <a href="/">Home</a>
+    <a href="/view_all">view</a>
+    <a href="/update">Update Password</a>
+    <a href="/logout">Logout</a>
+
+
+</div>
+{% else %}
+<div class="nav">
+  <a href="/">Home</a>
+  <a href="/login">Login</a>
+  <a href="/create">Create Account</a>
+</div>
+{% endif %}
+</body>
+</html>
